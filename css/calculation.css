@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900');
+
+body {
+  font-family: Playfair;
+  font-size: 15px;
+  position: relative;
+}
+
+header {
+  background-color: #E63946;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 25px;
+  /* text-align: center; */
+  font-weight: bolder;
+}
+
+header h2 {
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#backarrow{
+  margin-top:20px;
+  font-weight: bolder;
+  font-size: large;
+  text-align: left;
+  position: absolute;
+  left: 0; 
+  margin-left: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#hourstitle {
+  margin-top: 45px;
+  font-weight: bolder;
+  font-size: large;
+}
+
+#courses {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.courseandmark {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  gap: 30px;
+}
+
+/* Select styling */
+select {
+  font-family: 'Playfair';
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  color: #333;
+  width: 170px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+select:hover {
+  border-color: #E63946;
+}
+
+select:focus {
+  outline: none;
+  border-color: #E63946;
+  background-color: #ffadb4;
+  text-align: left;
+}
+
+select option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-content: center;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 40%;
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#calculatebtn {
+  font-family: Playfair;
+  padding: 12px 20px;
+  background-color: #E63946;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+#calculatebtn:hover {
+  background-color: #ffadb4;
+  transform: scale(1.05);
+}
+
+#calculatebtn:active {
+  background-color: #ffadb4;
+  transform: scale(1);
+}
+
+footer {
+  background-color: #E63946;
+  text-align: center;
+  padding: 10px;
+}
+
+footer h4 {
+  font-size: 12px;
+  padding-bottom: 0px;
+}
+
+.footericons a {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  padding: 10px;
+}
+
+.footericons {
+  padding-top: 5px;
+}
+
+.below-calc-link {
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: 30px;
+}
+.below-calc-link a {
+  color: #457B9D;
+  font-size: 14px;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.below-calc-link a:hover {
+  color: #E63946;
+  text-decoration: underline;
+}
+
+
+/* mobile devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  main {
+    width: 100%;
+  }
+
+  #hourstitle {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  #courses {
+    width: 100%;
+  }
+
+  .courseandmark {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    gap: 30px;
+  }
+
+  .modal-content {
+    width: 60%;
+    height: 50px;
+  }
+
+  .courseandmark {
+    gap: 15px;
+  }
+}
+
+/* iPads and tablets */
+@media screen and (min-width: 481px) and (max-width:768px){
+  main{
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 60%;
+    height: 50px;
+  }
+}

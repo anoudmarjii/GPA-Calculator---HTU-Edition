@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumulative GPA Calculation</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/calculationCum.css">
+</head>
+
+<body>
+    <header>
+        <h1>GPA Calculator - HTU Edition</h1>
+        <h2>By: Anoud Marji</h2>
+    </header>
+    <main>
+        <a href="index.html">
+            <h3 id="backarrow"><i class='bx bx-arrow-back'></i></h3>
+        </a>
+        <h4 id="hourstitle">To calculate your cumulative GPA, please enter:</h4>
+
+        <section id="fields">
+            <div class="fieldsRow">
+            <div class="allFields">
+                <label for="prevGPA">Previous GPA:</label>
+                <input type="number" id="prevGPA">
+            </div>
+            <div class="allFields">
+                <label for="prevHours">Total credit hours completed before this semester:</label>
+                <input type="number" id="prevHours">
+            </div>
+        </div>
+        <div class="fieldsRow">
+            <div class="allFields">
+                <label for="currentGPA">Current semester GPA:</label>
+                <input type="number" id="currentGPA">
+            </div>
+            <div class="allFields">
+                <label for="currentHours">Total credit hours completed this semester:</label>
+                <input type="number" id="currentHours">
+            </div>
+        </div>
+        </section>
+
+        <button onclick="calculateCumGPA()" id="calculatebtn">Calculate</button>
+
+        <div class="below-calc-link">
+            <a href="calculation.html">Want to calculate your <b>semester GPA</b>?</a>
+          </div>
+          
+
+        <!-- <p id="result"></p> -->
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="result"></p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <section class="footericons">
+            <a href="https://www.instagram.com/graphixybyanoud?igsh=MXRwa213aXQzYWQ0NQ=="><i
+                    class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.linkedin.com/in/anoud-marji-245aa5301"><i class='bx bxl-linkedin-square'></i></a>
+        </section>
+        <h4><i class='bx bx-copyright'></i>All Rights Reserved 2025</h4>
+    </footer>
+
+    <script src="../js/calculationCum.js"></script>
+
+</body>
+
+</html>
